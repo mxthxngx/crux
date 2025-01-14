@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema.json",
+  "style": "new-york",
+  "rsc": true,
+  "tsx": true,
+  "tailwind": {
+    "config": "tailwind.config.ts",
+    "css": "src/styles/globals.css",
+    "baseColor": "zinc",
+    "cssVariables": true
+  },
+  "iconLibrary": "lucide",
+  "aliases": {
+    "components": "@crux/ui/components",
+    "utils": "@crux/ui/lib/utils",
+    "hooks": "@crux/ui/hooks",
+    "lib": "@crux/ui/lib",
+    "ui": "@crux/ui/components"
+  }
+}

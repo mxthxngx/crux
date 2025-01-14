@@ -1,0 +1,1 @@
+export { default } from "@crux/ui/postcss.config";
