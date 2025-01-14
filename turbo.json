@@ -1,17 +1,25 @@
 {
-    "$schema": "https://turborepo.org/schema.json",
-    "tasks":{
-        "dev":{
-            "cache":false,
-            "persistent": true
-        },
-        "build":{
-           "dependsOn": [
-            "^build"
-           ],
-           "outputs":[
-            "dist/**"
-           ]
-        }
+  "$schema": "https://turborepo.org/schema.json",
+  "tasks": {
+    "dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "build": {
+      "dependsOn": [
+        "^build"
+      ],
+      "outputs": [
+        "dist/**"
+      ]
+    },
+    "typecheck": {
+      "dependsOn": [
+        "^build"
+      ]
+    },
+    "clean": {
+      "cache": false
     }
+  }
 }
