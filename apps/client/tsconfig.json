@@ -1,6 +1,6 @@
 {
   "exclude": ["node_modules"],
-  "extends": "@crux/typescript-config/vite.json",
+  "extends": "@crux/tsconfig/vite.json",
   "compilerOptions": {
     "rootDir": ".",
     "outDir": "dist",
@@ -9,5 +9,5 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["src", "vite.config.ts"]
+  "include": ["src", "vite.config.ts", "tailwind.config.ts"]
 }

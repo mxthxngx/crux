@@ -1,1 +1,1 @@
-export * from "@crux/ui/tailwind.config";
+export * from '@crux/ui/tailwind.config'

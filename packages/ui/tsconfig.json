@@ -1,5 +1,5 @@
 {
-  "extends": "@crux/typescript-config/react-library.json",
+  "extends": "@crux/tsconfig/react-library.json",
   "compilerOptions": {
     //"outDir": "dist"
     "baseUrl": ".",

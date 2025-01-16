@@ -49,8 +49,9 @@
     "ts-node": "^10.9.1",
     "tsconfig-paths": "^4.2.0",
     "typescript": "^5.1.3",
-    "@crux/eslint-config": "workspace:*",
-    "@crux/typescript-config": "workspace:*"
+    "@crux/config": "workspace:*",
+    "@crux/tsconfig": "workspace:*",
+    "husky": "^9.1.7"
   },
   "jest": {
     "moduleFileExtensions": [
