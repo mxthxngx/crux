@@ -1,13 +1,12 @@
-import * as React from "react"
+import * as React from 'react'
 
-import { Icons } from "@/components/icons"
-import { cn } from "@crux/ui/lib/utils"
-import { Label } from "@crux/ui/components/label"
-import { Input } from "@crux/ui/components/input"
-import { Button } from "@crux/ui/components/button"
+import { Icons } from '@/components/icons'
+import { cn } from '@crux/ui/lib/utils'
+import { Label } from '@crux/ui/components/label'
+import { Input } from '@crux/ui/components/input'
+import { Button } from '@crux/ui/components/button'
 
-interface UserAuthFormProps extends React.HTMLAttributes<HTMLDivElement> {}
-
+// @ts-ignore: Suppress no-empty-interface error for this case
 export function UserAuthForm({ className, ...props }: UserAuthFormProps) {
   const [isLoading, setIsLoading] = React.useState<boolean>(false)
 
@@ -21,7 +20,7 @@ export function UserAuthForm({ className, ...props }: UserAuthFormProps) {
   }
 
   return (
-    <div className={cn("grid gap-6", className)} {...props}>
+    <div className={cn('grid gap-6', className)} {...props}>
       <form onSubmit={onSubmit}>
         <div className="grid gap-2">
           <div className="grid gap-1">
@@ -61,7 +60,7 @@ export function UserAuthForm({ className, ...props }: UserAuthFormProps) {
           <Icons.spinner className="mr-2 h-4 w-4 animate-spin" />
         ) : (
           <Icons.gitHub className="mr-2 h-4 w-4" />
-        )}{" "}
+        )}{' '}
         GitHub
       </Button>
     </div>

@@ -1,5 +1,5 @@
 {
-  "name": "@crux/typescript-config",
+  "name": "@crux/tsconfig",
   "version": "0.0.0",
   "private": true,
   "license": "MIT",

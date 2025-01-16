@@ -1,8 +1,8 @@
-import React from "react"
-import { cn } from "@crux/ui/lib/utils"
-import { UserAuthForm } from "./components/user-auth-form"
+import React from 'react'
+import { cn } from '@crux/ui/lib/utils'
+import { UserAuthForm } from './components/user-auth-form'
 
-import "@crux/ui/globals.css";
+import '@crux/ui/globals.css'
 
 export default function AuthenticationPage() {
   return (
@@ -10,9 +10,7 @@ export default function AuthenticationPage() {
       <div className="container relative hidden h-screen flex-col items-center justify-center md:grid lg:max-w-none lg:grid-cols-2 lg:px-0">
         <a
           href="/examples/authentication"
-          className={cn(
-            "absolute right-4 top-4 md:right-8 md:top-8"
-          )}
+          className={cn('absolute right-4 top-4 md:right-8 md:top-8')}
         >
           Login
         </a>
@@ -36,7 +34,8 @@ export default function AuthenticationPage() {
           <div className="relative z-20 mt-auto">
             <blockquote className="space-y-2">
               <p className="text-lg">
-                &ldquo;This is the best workspace chat app we have ever seen.&rdquo;
+                &ldquo;This is the best workspace chat app we have ever
+                seen.&rdquo;
               </p>
               <footer className="text-sm">Tim Cook</footer>
             </blockquote>
@@ -54,14 +53,14 @@ export default function AuthenticationPage() {
             </div>
             <UserAuthForm />
             <p className="px-8 text-center text-sm text-muted-foreground">
-              By clicking continue, you agree to our{" "}
+              By clicking continue, you agree to our{' '}
               <a
                 href="/terms"
                 className="underline underline-offset-4 hover:text-primary"
               >
                 Terms of Service
-              </a>{" "}
-              and{" "}
+              </a>{' '}
+              and{' '}
               <a
                 href="/privacy"
                 className="underline underline-offset-4 hover:text-primary"

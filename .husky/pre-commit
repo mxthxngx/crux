@@ -1,0 +1,16 @@
+#!/bin/sh
+if ! command -v lolcat > /dev/null 2>&1; then
+  echo "❌ 'lolcat' is not installed."
+  echo "➡️  Please install it using: brew install lolcat"
+  echo "Then, rerun this script."
+  exit 1
+fi
+
+echo '🎙️ Styling your project before committing' | lolcat
+
+if pnpm run format &&  pnpm run lint ; then
+  git add .
+  echo  "✅ All checks passed and your project is ready to commit!" | lolcat
+else
+  echo  "❌ Some checks failed. Please review the errors above." | lolcat
+fi
