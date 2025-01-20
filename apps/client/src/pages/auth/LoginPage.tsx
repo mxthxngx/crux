@@ -1,5 +1,4 @@
 import React from 'react'
-import AuthLayout from './AuthLayout'
 import { Input } from '@crux/ui/components/input'
 import { Button } from '@crux/ui/components/button'
 import { FcGoogle } from 'react-icons/fc'
@@ -8,12 +7,15 @@ import SocialAuthButton from '@/components/SocialAuthButton'
 import SeparatorWithText from '@/components/SeparatorWithText'
 import { Link } from '@tanstack/react-router'
 
-export default function LoginPage() {
+export function LoginPage() {
   const handleGoogleLogin = () => {}
   const handleGithubLogin = () => {}
 
   return (
-    <AuthLayout title="Sign in to Crux">
+    <>
+      <h1 className="text-3xl sm:text-5xl font-extrabold mb-6 sm:mb-8">
+        Sign in to Crux
+      </h1>
       <h1 className="text-xl font-medium mb-8 text-muted-foreground">
         Use one of the following methods to continue
       </h1>
@@ -53,6 +55,6 @@ export default function LoginPage() {
           Don&apos;t have an account? Sign up
         </Link>
       </div>
-    </AuthLayout>
+    </>
   )
 }

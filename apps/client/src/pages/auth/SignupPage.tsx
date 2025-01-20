@@ -1,12 +1,10 @@
 import React, { useState } from 'react'
-import AuthLayout from './AuthLayout'
 import { Input } from '@crux/ui/components/input'
 import { Button } from '@crux/ui/components/button'
 import { FcGoogle } from 'react-icons/fc'
 import { FaGithub } from 'react-icons/fa'
 import SocialAuthButton from '@/components/SocialAuthButton'
 import SeparatorWithText from '@/components/SeparatorWithText'
-import * as yup from 'yup'
 import { Link, useNavigate } from '@tanstack/react-router'
 
 export default function SignupPage() {
@@ -27,7 +25,10 @@ export default function SignupPage() {
   }
 
   return (
-    <AuthLayout title="Sign up to Crux" isSignupPage={true}>
+    <>
+      <h1 className="text-3xl sm:text-5xl font-extrabold mb-6 sm:mb-8">
+        Sign up to Crux
+      </h1>
       <h1 className="text-xl font-medium mb-4 text-muted-foreground">
         Use one of the following methods to continue
       </h1>
@@ -65,6 +66,6 @@ export default function SignupPage() {
           Already have an account? Login
         </Link>
       </div>
-    </AuthLayout>
+    </>
   )
 }
